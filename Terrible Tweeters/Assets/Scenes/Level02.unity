@@ -6017,6 +6017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelController
       objectReference: {fileID: 0}
+    - target: {fileID: 8288079959488792855, guid: 0048bbfefa3d48a479125019ee4ace65, type: 3}
+      propertyPath: _nextLevelName
+      value: Level01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0048bbfefa3d48a479125019ee4ace65, type: 3}
 --- !u!1 &630657199
