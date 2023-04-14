@@ -12,6 +12,24 @@ public class Monster : MonoBehaviour
 
     bool _hasDied = false;
 
+
+    public void OnMouseDown()
+    {
+        GetComponent<AudioSource>().Play();
+    }
+
+    IEnumerator start()
+    {
+        while (_hasDied == false)
+        {
+            float delay = UnityEngine.Random.Range(5, 9);
+            yield return new WaitForSeconds(delay);
+            if (_hasDied == false)
+            {
+                GetComponent<AudioSource>().Play();
+            }
+        }
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (ShouldDieFromCollision(collision))
