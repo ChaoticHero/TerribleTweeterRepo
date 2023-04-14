@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _launchForce: 700
-  _maxDragDistance: 4
+  _maxDragDistance: 5
 --- !u!82 &1615000195
 AudioSource:
   m_ObjectHideFlags: 0
