@@ -37,11 +37,12 @@ public class VolumeSlider : MonoBehaviour
         _disableToggleEvent = true;
         _toggle.isOn = _slider.value > _slider.minValue;
         _disableToggleEvent = false;
+        PlayerPrefs.SetFloat(_volumeParameter, _slider.value);
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        _slider.value = PlayerPrefs.GetFloat(_volumeParameter, _slider.value); 
     }
 
     // Update is called once per frame
